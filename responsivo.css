@@ -1,0 +1,207 @@
+@media(min-width: 901px){
+    .container{
+        background-color:rgb(217, 221, 224);
+        height: 100vh;
+        display: flex;
+    }
+    
+    /* estilização da parte esquerda do site  */
+
+    #msg h1{
+        padding-top: 30%;
+    }
+
+    #msg{
+        height: 100vh;
+        width: 45vw;
+       background-image: linear-gradient(
+        45deg,
+       rgba(223, 0, 255, 0.5),
+       rgb(208, 0, 240), 
+       rgb(157, 3, 181));
+       animation-name: TelaEsquerda;
+       animation-duration: 2s;
+       border-radius: 0px 40px 40px 0px;   
+    }
+    
+    h1{
+    padding-top: 250px;
+      text-align: center;
+      font-size: 90px;
+      color: aliceblue;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 100;
+    
+    }
+    
+    #msg h1{
+        animation-name: TelaEsquerda;
+        animation-duration: 3s;
+    }
+    
+    
+    p{
+        margin: 0 auto;
+        width: 60%;
+        padding-top: 30px;
+        font-size: 20px;
+        color:rgb(193, 180, 180);
+        margin-bottom: 40px;
+        animation-name: TelaEsquerda;
+        animation-duration: 3s;
+        
+    }
+    
+    #msg a{
+        color: aliceblue;
+        font-size: 30px;
+        text-decoration: none;
+        margin-left: 20%;
+        border: 3px solid white;
+        border-radius: 30px;
+        padding: 7px;
+        animation-name: TelaEsquerda;
+        animation-duration: 3s;
+    }
+    
+    
+    /* Css da parte direita do Site */
+    
+    #form{
+       margin: 0 auto;
+       animation-name: TelaDireita;
+       animation-duration: 2s;
+    }
+    
+    #form h1{
+       padding-top: 10rem;
+       font-size: 40px;
+       color: blueviolet;
+       font-weight: 700;
+       margin-bottom: 70px;
+      
+    }
+    
+    input{
+        border: none;
+        outline: 0;
+        margin: 0 auto;
+        height: 40px;
+        width: 300px;
+        display: block;
+        margin-bottom: 30px;
+       background-color:rgb(217, 221, 224);
+        border-bottom: 1px solid rgb(147, 72, 223);
+        color: rgb(148, 0, 224);
+    }
+    
+    input::placeholder{
+        color: blueviolet;
+    }
+    
+     
+    .btn{
+        margin-top: 90px;
+        padding-left: 20px;
+    }
+    
+      div #btn-n{
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        text-decoration: none;
+        border-radius: 30px;
+        padding: 7px;
+        background-color: rgb(147, 72, 223);
+    }
+    
+    #form a{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    
+    
+    #btn-n:hover{
+        background-color: rgb(208, 0, 240);
+        transition: 1s all;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+@media(max-width: 900px) {
+div{
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+div #msg{
+    border-radius: 0px;
+}
+
+#msg{
+   background-color: black;
+   min-height: 100vh;
+}
+
+#msg a{
+    text-align: center;
+    width: 50%;
+}
+
+#form input{
+    border: none;
+    outline: 0;
+    margin: 0 auto;
+    height: 40px;
+    width: 300px;
+    display: block;
+    margin-bottom: 30px;
+   background-color:rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(127, 55, 200);
+    color: rgb(148, 0, 224);
+}
+
+#form .btn a{
+      margin-bottom: 80px;
+    text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+        width: 60%;
+}
+
+}
+
+@media(max-width:800px){
+    div #msg{
+       min-height: 100vh;
+    }
+    div #msg h1{
+        padding-top: 10px;
+    }
+
+
+
+    div #form h1{
+      padding-top: 15px;
+      font-size: 30px;
+    }
+
+  div #form .btn a{
+       background-color: rgb(51, 0, 255);
+      margin-bottom: 30px;
+      padding: 10px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
